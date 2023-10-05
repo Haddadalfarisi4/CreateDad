@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio GbT</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@600&family=Montserrat:ital@0;1&display=swap" rel="stylesheet">
+</head>
+<body>
+    <a href="http://127.0.0.1:5501/index.html"></a>
+    <header id="header">
+    <h1>PT NUSA KEMBANGAN</h1>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#service">Service</a>
+        <a href="#contact">Contact</a>
+    </nav>
+   </header>
+   <section id="landing">
+    <div>
+        <h1>
+            Best Solution for Your <br>
+             Business Problem
+        </h1>
+        <p>We are passionate coder who will design and<br>
+           develop best solution for you.</p>
+        <div>
+            <a class="btn btn-alt" href="#about">More Info</a>
+            <a class="btn" href="#contact">Contact Us</a>
+            </div>
+        </div>
+        <div>
+            <img src="asset/images/landing.png" alt="landing">
+            </div>
+   </section>
+   <section id="about">
+    <div>
+        <img src="asset/images/about.png" alt="About">
+    </div>
+    <div>
+        <h1>We are the best in our field</h1>
+        <p>For the last 5 years we always give the best to our client and we will always be the best</p>
+           <div id="about-stats">
+              <div class="about-stats-item">
+                <h1>100+</h1>
+                <div></div>
+                <p>Experts</p>
+            </div>
+            <div class="about-stats-item">
+                <h1>300+</h1>
+                <div></div>
+                <p>clients</p>
+            </div>
+            <div class="about-stats-item">
+                <h1>500+</h1>
+                <div></div>
+                <p>Products</p>
+            </div>
+      </div>
+   </section>
+   <section id="service">
+    <div class="service-header">
+        <div>
+            <h1>Our Service</h1>
+            <p>We have the best</p>
+        </div>
+        <a href="#contact" class="btn">Contact Us</a>
+    </div>
+    <div class="service-detail">
+        <div class="service-detail-item"> 
+        <img src="asset/images/service1.png" alt="Service">
+        <h2>Web Application</h2>
+        <p>Web application can to be your best and easiestsolution for your problem that can be access anywhere</p>
+    </div>
+    <div class="service-detail-item">
+        <img src="asset/images/service2.png" alt="Service">
+        <h2>UI/UX design</h2>
+        <p>We create the best design based on problem we analyze and give the best experience to user</p>
+    </div>
+    <div class="service-detail-item">
+        <img src="asset/images/service3.png" alt="Service">
+        <h2>Mobile Application</h2>
+        <p>Mobile application can be your best solution for the easy access application where everybody have a phone</p>
+    </div>
+   </section>
+   <section id="contact">
+    <h1>Contact Us</h1>
+    <p>Get in touch with us now and get your problem solved</p>
+    <div class="contact-detail">
+            <form id="contactForm" method="POST">
+                <h1>Tell us your problem</h1>
+                <div class="form-group">
+                    <div class="input-group">
+                        <label for="">Name</label>
+                        <input type="text" id="name" name="name" placeholder="Your Name" required> 
+                    </div>
+                    <div class="input-group">
+                        <label for="">Email</label>
+                        <input type="text" id="email" name="enail" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="">Subject</label>
+                        <input type="text" id="subject" name="subject" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="">Phone Number</label>
+                        <input type="text" id="phone" name="phone" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="">Message</label>
+                        <input type="text" id="message" name="message" required>
+                    </div>
+                    <button class="btn" type="submit" value="submit">Submit</button>
+                </div>
+            </form>
+        <div>
+            <h1>Our Location</h1>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.7652626547515!2d106.68680634673987!3d-6.162184146276936!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f84283b723ab%3A0xe8664f0a652381f5!2sMasjid%20Al-Istiqomah!5e0!3m2!1sid!2sid!4v1692963379754!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+   </section>
+   <footer id="footer">
+    <div>
+        <h1>Coder</h1>
+        <p>Software House bassed in indonesia Experts in lulus. design. web apps. and mobile apps</p>
+    </div>
+    <div class="social-icon">
+        <img src="/asset/images/Facebook.svg" alt="facebook">
+        <img src="/asset/images/Instagram.svg" alt="Instagram">
+        <img src="/asset/images/Twitter.svg" alt="Twitter">
+    </div>
+   </footer>
+
+   <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+       (function () {
+            emailjs.init("tGAKRBjTVwPR40nqg"); // Ganti dengan User ID EmailJS Anda
+
+            document.getElementById("contactForm").addEventListener("submit", function (event) {
+                event.preventDefault();
+
+                // Kirim email menggunakan EmailJS
+                emailjs.send("service_vf0wpq4", "template_l3zh8os", this)
+                    .then(function (response) {
+                        console.log("Email lo sent successfully, thank you very much:", response);
+                        alert("Email lo sent successfully, thank you very much!");
+                    }, function (error) {
+                        console.error("Email send failed:", error);
+                        alert("Email send failed. Please try again later.");
+                    });
+            });
+        })();
+    </script>
+</body>
+</html>
